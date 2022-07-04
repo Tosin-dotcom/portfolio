@@ -5,12 +5,13 @@ body {
 
 * {
     box-sizing: border-box;
-    margin: 0px
+    margin: 0px;
+    font-family: Poppins, sans-serif;
 }
 
 body {
     background: #F5F7FA;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -41,6 +42,21 @@ body {
     padding: 30px;
 }
 
+.link-1 {
+    margin-top: 60px;
+}
+
+.div-1 a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    background: #ff7599;
+    margin-right: 30px;
+}
+
+.div-1 a:hover {
+    background: #9466EA;
+}
 
 .display-image {
     flex: 50%;
@@ -48,79 +64,104 @@ body {
 
 
 
-
 .text-1 {
     color: #9466EA;
     font-family: Raleway, sans-serif;
     margin-bottom: 40px;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .text-2 {
     font-family: Poppins, sans-serif;
-    line-height: 2;
-    font-size: 24px;
-
+    line-height: 1.5;
 }
 
 
 .display-image img {
     width: 100%;
-    border-radius: 10px;
 }
+
 
 
 @media only screen and (max-width: 1200px) {
+
     .text-1 {
-        font-size: 40px;
-        margin-bottom: 60px
+        margin-bottom: 10px
     }
 
-    .text-2 {
-        font-size: 20px;
+
+
+    .link-1 a {
+        padding: 10px 15px
+    }
+
+    body {
+        width: 80%
     }
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .div-1,
+    .display-image {
+        flex: 100%;
+        padding: 10px;
+    }
+}
+
+
 
 .container-2 {
     display: flex;
-    height: 700px;
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: Poppins, sans-serif;
+    flex-wrap: wrap;
 }
 
+
 .row-1 {
-    flex: 50%;
-    margin: 40px;
+    flex: 30%;
     border-radius: 20px;
     background: #9466EA;
+    padding: 20px
 }
 
 
 .row-2 {
-    flex: 50%;
-    margin: 40px;
+    flex: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px
 }
 
 .row-2 h2 {
-    padding: 10px;
-    font-size: 32px;
     font-weight: 500;
     line-height: 48px;
 }
 
 .row-2 h1 {
-    font-size: 40px;
     font-weight: 600;
-    padding: 10px;
 }
 
 .row-2 p {
-    padding: 10px;
     line-height: 28px;
 }
 
+
+@media only screen and (max-width: 600px) {
+
+    .row-1,
+    .row-2 {
+        flex: 100%
+    }
+
+    .row-2 {
+        margin-top: 20px;
+    }
+}
+
 .col {
-    padding: 30px;
+    padding: 10px;
     color: #FFFFFF;
 }
 
@@ -129,13 +170,76 @@ body {
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 600px) {
 
-    .div-1,
-    .display-image,
-    .row-1,
-    .row-2 {
+
+.skill {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.skill-1 {
+    flex: 30%;
+    margin-top: 20px;
+}
+
+
+.skill-2 {
+    flex: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part {
+    flex: 50%;
+    height: 120px;
+    padding: 10px;
+    border-right: 1px solid #9466EA;
+    margin-top: 20px
+}
+
+@media only screen and (max-width: 768px) {
+
+    .skill-1,
+    .skill-2 {
+        flex: 100%
+    }
+
+    .part {
         flex: 100%;
-        padding: 0px;
+        padding-left: 0px;
+        border-bottom: 1px solid #9466EA;
+        border-right: 0;
+    }
+}
+
+.experience {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.ex-1 {
+    flex: 30%;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.ex-3 {
+    flex: 70%;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.ex-4 {
+    padding: 30px;
+    border-bottom: 1px solid #9466EA
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ex-1,
+    .ex-3 {
+        flex: 100%
     }
 }
