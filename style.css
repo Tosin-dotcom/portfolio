@@ -6,7 +6,7 @@ body {
 * {
     box-sizing: border-box;
     margin: 0px;
-    font-family: Poppins, sans-serif;
+    /* font-family: Poppins, sans-serif; */
 }
 
 body {
@@ -16,10 +16,10 @@ body {
 
 .nav-bar {
     font-family: Lato, sans-serif;
-    background: #F2F2F2;
+    background: #9466EA;
     padding: 0px 100px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
 }
 
@@ -33,6 +33,16 @@ body {
     padding: 14px 16px;
     
 }
+
+.items:first-child {
+    margin-right: auto;
+    font-family: 'Style Script', cursive;
+    font-size: 40px;
+    padding:0px
+}
+
+
+
 .items a {
     text-decoration: none;
     color: black
@@ -47,7 +57,7 @@ body {
 }
 
 .container {
-    margin: 20px 100px;
+    margin: 80px 100px 20px 100px;
     display: flex
 }
 
@@ -57,10 +67,22 @@ body {
     padding: 20px;
 }
 
+@keyframes example {
+    0%   {filter: brightness(10%); width:10%}
+    25%  {filter: brightness(30%); width:15%}
+    50%  {filter: brightness(50%); width:20%}
+    75%  {filter: brightness(75%); width:25}
+    100% {filter: brightness(100%); width:30%}
+  }
+
 .display-image {
     width: 30%;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
    
 }
+
 
 .link-1 {
     margin-top: 40px;
@@ -146,6 +168,7 @@ body {
     display: flex;
     padding: 40px 100px;
     flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
 }
 
 .skill-1 {
@@ -192,6 +215,7 @@ body {
     display: flex;
     padding: 40px 100px;
     flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
     background: #F6F6F6;
 }
 
@@ -219,6 +243,7 @@ body {
     display: flex;
     margin: 40px 100px;
     flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
     
 }
 .pro-1 {
@@ -232,7 +257,8 @@ body {
 }
 
 #contact {
-    margin: 40px 100px;
+    padding: 40px 100px;
+    font-family: Poppins, sans-serif;
 }
 
 #contact a {
