@@ -267,6 +267,21 @@ body {
     font-style: italic;
 }
 
+
+.pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery {
+    padding: 40px 100px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%
+}
+
 .footer {
     background: #F2F2F2;
     height: 50px;
@@ -296,7 +311,7 @@ body {
     .container-2,
     .skill,
     .experience,
-    #contact, .project {
+    #contact, .project, .gallery {
         padding: 20px;
     }
 }
